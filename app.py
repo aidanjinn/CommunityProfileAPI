@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request, render_template
 from scraping_methods import *
+from tasks import generate_profile
 
 app = Flask(__name__)
 
@@ -37,19 +38,19 @@ STATE_ABBREV = {
     'montana': 'MT',
     'nebraska': 'NE',
     'nevada': 'NV',
-    'new hampshire': 'NH',
-    'new jersey': 'NJ',
-    'new mexico': 'NM',
-    'new york': 'NY',
-    'north carolina': 'NC',
-    'north dakota': 'ND',
+    'new_hampshire': 'NH',
+    'new_jersey': 'NJ',
+    'new_mexico': 'NM',
+    'new_york': 'NY',
+    'north_carolina': 'NC',
+    'north_dakota': 'ND',
     'ohio': 'OH',
     'oklahoma': 'OK',
     'oregon': 'OR',
     'pennsylvania': 'PA',
-    'rhode island': 'RI',
-    'south carolina': 'SC',
-    'south dakota': 'SD',
+    'rhode_island': 'RI',
+    'south_carolina': 'SC',
+    'south_dakota': 'SD',
     'tennessee': 'TN',
     'texas': 'TX',
     'utah': 'UT',
@@ -59,7 +60,7 @@ STATE_ABBREV = {
     'west virginia': 'WV',
     'wisconsin': 'WI',
     'wyoming': 'WY',
-    'washington dc': 'DC'
+    'washington_dc': 'DC'
 }
 
 @app.route('/wiki', methods = ['GET'])
@@ -111,37 +112,36 @@ def get_complete_profile():
             
         city = parts[0].strip()
         state = parts[1].strip()
+        state_lower = state.lower()
+        state_code = STATE_ABBREV.get(state_lower)
         
-        wiki_format = f"{city},_{state}"
-        
-        state = state.lower()
-        state_code = STATE_ABBREV.get(state)
-        
-        wiki_result = wiki_demo_scrape(wiki_format)
-        eia_result = eia_profile_scrape(state_code)
-        
-        combined_profile = {
-            "location": location,
-            "community_profile": wiki_result.get("area_information"),
-            "state_energy_profile": eia_result.get("state_information")
-        }
-        
-        print_formatted_profile(combined_profile["community_profile"])
-        print_formatted_profile(combined_profile["state_energy_profile"])
+        if state_code is None:
+            return jsonify({'error': 'Invalid state name'}), 400
 
-        with open(f"community_energy_profile_{location}.txt", 'w') as f:
-            f.write(f"Community Profile for {location}\n")
-            f.write("="*80 + "\n")
-            f.write(combined_profile["community_profile"])
-            f.write("\n\n")
-            f.write("Energy Profile\n")
-            f.write("="*80 + "\n")
-            f.write(combined_profile["state_energy_profile"])
+        # Start async task
+        task = generate_profile.delay(location, city, state, state_code)
         
-        return jsonify(combined_profile)
+        return jsonify({
+            'message': 'Profile generation initiated',
+            'task_id': task.id,
+            'status': 'Processing'
+        }), 202
         
     except Exception as e:
         return jsonify({'error': f'Internal server error: {str(e)}'}), 500
+
+@app.route('/status/<task_id>', methods=['GET'])
+def get_task_status(task_id):
+    task = generate_profile.AsyncResult(task_id)
+    if task.ready():
+        result = task.get()
+        return jsonify({
+            'status': 'Completed',
+            'result': result
+        })
+    return jsonify({
+        'status': 'Processing'
+    })
 
 if __name__ == '__main__':
     app.run(debug=True)

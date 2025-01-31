@@ -1,0 +1,42 @@
+Community Profile for Airmont,New_York
+================================================================================
+**Airmont, New York: Community Profile**
+
+Airmont is a village in Rockland County, New York, incorporated in 1991 from the hamlets of Tallman, Airmont, and South Monsey.  Its creation, intended to preserve a suburban aesthetic, has been marked by significant legal challenges concerning zoning laws and accusations of religious discrimination against the Orthodox Jewish community.  These disputes, involving both state and federal courts, centered on restrictions impacting the building of synagogues and yeshivas, leading to revised zoning codes and settlements with the Department of Justice.  Despite these legal battles, Airmont has experienced substantial population growth,  reflecting a dynamic community grappling with issues of development, religious diversity, and its evolving identity within Rockland County.  The village's history is characterized by tensions between maintaining its planned suburban character and accommodating the needs of its diverse population.  Recent events, including a high-profile arrest of a former deputy mayor, further underscore the complex social and political landscape of this relatively young municipality.  Airmont's future will likely continue to be shaped by navigating the ongoing dialogue between its development goals and its commitment to fair housing and religious freedom.
+
+
+**1. Qualitative Account:**
+
+Airmont is known for its suburban character, initially designed to maintain a specific residential aesthetic.  However, its history is significantly defined by its legal battles surrounding zoning ordinances and allegations of religious discrimination, shaping its public image and ongoing community development.  The village is also known for its relatively high median household income and proximity to larger towns and cities in Rockland County, offering convenient access to amenities and transportation.
+
+**2. Racial Demographics (2020 Census):**
+
+* White: 81.2%
+* African American: 4.9%
+* Asian: 2.5%
+* Two or more races: 4.5%
+* Hispanic or Latino origin: 15.2%
+
+**3. Other Relevant Demographic and Community Data (2020 Census):**
+
+* Population: 10,166
+* Population Density: 2,226.9 people per square mile
+* Median Household Income: $98,750
+* Per Capita Income: $34,051
+* Poverty Rate: 10.9%
+* Median Age:  Data not explicitly provided in source text, but implied to be above the national average given the high median income and age distribution.
+* Age Distribution:  33.5% under 18; 14.9% over 65
+* Gender Distribution: 52% female, 48% male
+* Housing Units: 2,571
+* School Districts: Primarily Suffern Central School District, with some residents zoned to East Ramapo Central School District.
+
+Energy Profile
+================================================================================
+**New York Electricity Grid Mix (2023)**
+
+* **Natural Gas:** 46.5%
+* **Nuclear:** 22.0%
+* **Hydropower:** 22%
+* **Renewables (Solar, Wind, Biomass):** 30.8%  (Further breakdown: Solar ~5%, Wind ~4%, Biomass ~1%)
+* **Petroleum:** 0.1%
+* **Coal:** 0.0%

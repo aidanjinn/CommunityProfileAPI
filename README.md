@@ -35,7 +35,7 @@ The Community Profile Creation API is a Flask-based application that scrapes dem
 - **Method**: `GET`
 - **Query Parameter**:
   - `location`: The location in the format `city,state` (e.g., `New_York_City,New_York`).
-- **Response**: Returns JSON containing combined demographic and energy profile data. Also saves the profile as a formatted text file locally.
+- **Response**: Returns JSON with redis task_id. Also saves the profile as a formatted text file locally.
 
 ## Example Usage
 

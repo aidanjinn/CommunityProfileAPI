@@ -1,0 +1,54 @@
+Community Profile for Akron,New_York
+================================================================================
+**Akron, New York: Community Profile**
+
+Akron is a village nestled in the town of Newstead, Erie County, New York.  Situated on the west and north slopes of a hill, its name, derived from the Greek word for "summit," reflects its elevated location.  Founded around Akron Falls circa 1829, the village thrived initially due to water power provided by the falls, later becoming a significant cement producer thanks to local gypsum deposits.  Akron also had a notable cigar-making industry in its history.  Today, it maintains a relatively small-town atmosphere while remaining part of the larger Buffalo-Niagara Falls Metropolitan Statistical Area, offering residents proximity to the amenities of a larger city while retaining a distinct sense of community.  Its location near the Tonawanda Reservation of the Seneca Nation adds another layer to its cultural context.  The village boasts Akron Falls County Park, featuring the namesake falls, adding to its recreational attractions. The village is served by NY Route 93, providing access to surrounding areas.  With a relatively stable population hovering around 3,000, Akron maintains a consistent community character through time.
+
+**1. Qualitative Account:**
+
+Akron is known for its historical significance as a water-powered settlement and later a cement and cigar production center.  Its scenic location, proximity to Akron Falls County Park, and its small-town charm are key features contributing to its identity.  Its location within the Buffalo-Niagara Falls Metropolitan Area provides a balance of small-town character and access to regional amenities.
+
+**2. Racial Demographics (2000 Census Data):**
+
+* White: 97.57%
+* African American: 0.39%
+* Native American: 1.39%
+* Asian: 0.03%
+* Other Races: 0.13%
+* Two or More Races: 0.49%
+* Hispanic or Latino of any race: 0.65%
+
+**3. Other Relevant Demographic and Community Data (2000 Census Data):**
+
+* **Population:** 3,085
+* **Population Density:** 1,571.3 per square mile
+* **Median Household Income:** $35,313
+* **Median Family Income:** $48,083
+* **Median Age:** 39 years
+* **Poverty Rate:** 8.2%
+* **Housing Units:** 1,373
+* **Average Household Size:** 2.34
+* **Average Family Size:** 2.94
+
+
+**Note:**  The provided text primarily uses 2000 census data.  More recent data would provide a more current picture of Akron's demographics and community characteristics.
+
+Energy Profile
+================================================================================
+**New York State Electricity Generation Mix (2023)**
+
+| Energy Source          | Percentage of Generation |
+|-----------------------|--------------------------|
+| Natural Gas            | 46%                       |
+| Hydropower             | 22%                       |
+| Nuclear                | 22%                       |
+| Renewables (total)     | 31%                       |
+    | Hydropower        | ~22% (included above)     |
+    | Solar               | ~5% (included above)      |
+    | Wind                | ~4% (included above)      |
+    | Biomass             | ~1% (included above)      |
+| Petroleum              | <1%                        |
+| Coal                   | 0%                        |
+
+
+**Note:**  Renewable percentages are approximate due to the text's presentation of different sub-categories and overall totals; exact breakdown for each renewable source within the 31% total is not precisely stated in source text.
