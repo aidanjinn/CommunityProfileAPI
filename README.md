@@ -6,7 +6,7 @@
 ![Redis](https://img.shields.io/badge/Redis-6.0%2B-red)
 ![Celery](https://img.shields.io/badge/Celery-5.0%2B-green)
 
-The Community Profile Creation API is a Flask-based application that scrapes demographic data from Wikipedia and energy profile data from the U.S. Energy Information Administration (EIA) to create a comprehensive community profile for a given location. The API leverages Gemini to generate a formatted profile and saves it as a local text file. It also uses **Redis** as a message broker and **Celery** for asynchronous task processing.
+The Community Profile Generator is a Flask-based application that scrapes demographic data from Wikipedia and energy profile data from the U.S. Energy Information Administration (EIA) to create a comprehensive community profile for a given location. The API leverages Gemini to generate a formatted profile and saves it as a local text file. It also uses **Redis** as a message broker and **Celery** for asynchronous task processing.
 
 ## Features
 
